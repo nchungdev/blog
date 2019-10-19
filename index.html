@@ -52,7 +52,7 @@ layout: default
   const postItems = $(".post");
   const maxItem = postItems.length;
   const limit = 5;
-  const maxPage = maxItem / limit;
+  const maxPage = Math.ceil(maxItem / limit);
   var currentPage = 1;
   function changePage(page) {
     if (page > maxPage) {
