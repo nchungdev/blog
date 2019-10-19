@@ -10,7 +10,7 @@ twitter_username: jekyllrb
 github_username: jekyll
 
 # Build settings
-theme: minima
+theme: minimagit
 plugins:
   - jekyll-feed
   - jekyll-paginate
