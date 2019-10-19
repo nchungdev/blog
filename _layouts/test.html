@@ -1,0 +1,55 @@
+<!-- Pagination links -->
+<nav>
+  <ul class="pagination justify-content-center">
+    {% capture isPrevious %}{% endcapture %}
+    <!-- // -->
+    {% if paginator.page == 1 %}
+    <!-- // -->
+    {%- assign isPrevious = 'disabled' -%}
+    <!-- // -->
+    {% else %}
+    <!-- // -->
+    {%- assign isPrevious = "" -%}
+    <!-- // -->
+    {% endif %}
+    <li class="page-item {{ isPrevious }}">
+      <!-- // -->
+      {% capture previousPage %}/{% endcapture %}
+      <!-- // -->
+      {% if paginator.previous_page %}
+      <!-- // -->
+      {% assign previousPage = paginator.previous_page_path %}
+      <!-- // -->
+      {% endif %}
+      <a class="page-link" href="{{ previousPage }}">
+        Previous
+      </a>
+    </li>
+    <!-- show pages -->
+    {% for page in (1..paginator.total_pages) %}
+
+    <li class="page-item ">
+      {% if page == 1 %}
+      <a class="page-link" href="/">{{ page }}</a>
+      {% else %}
+      <a
+        class="page-link"
+        href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}"
+      >
+        {{ page }}
+      </a>
+      {% endif %}
+    </li>
+    {% endfor %}
+    <!-- next -->
+    {% if paginator.next_page %}
+    <li class="page-item">
+      <a href="{{ paginator.next_page_path }}" class="page-link">Next</a>
+    </li>
+    {% else %}
+    <li class="page-item">
+      <a class="page-link">Next</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>

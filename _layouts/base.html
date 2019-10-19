@@ -1,0 +1,29 @@
+---
+common-css:
+  - "/css/common/bootstrap.min.css"
+common-ext-css:
+  - "//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css"
+common-googlefonts:
+  - "Lora:400,700,400italic,700italic"
+  - "Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+common-js:
+  - "/js/common/bootstrap.bundle.min.js"
+  - "/js/common/jquery.min.js"
+  - "//momentjs.com/downloads/moment.js"
+common-ext-js:
+  - "//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"
+css:
+  - "/css/blog-home.scss"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% include nav.html %}
+    {{ content }}
+    <!-- script -->
+    {% include script.html %}
+  </body>
+</html>

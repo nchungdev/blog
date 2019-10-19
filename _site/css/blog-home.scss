@@ -1,0 +1,73 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.post {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .img-block {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  img {
+    max-height: 150px;
+  }
+  h4 {
+    color: rgba(0, 0, 0, 0.84) !important;
+    fill: rgba(0, 0, 0, 0.84) !important;
+    overflow: hidden !important;
+    max-height: 84px !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    letter-spacing: -0.42px !important;
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+  figcaption {
+    overflow: hidden !important;
+    max-height: 40px !important;
+    text-overflow: ellipsis !important;
+    font-style: normal !important;
+    letter-spacing: 0 !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    color: rgba(0, 0, 0, 0.54) !important;
+    fill: rgba(0, 0, 0, 0.54) !important;
+  }
+  .created-date {
+    time {
+      font-weight: 400 !important;
+      font-style: normal !important;
+      letter-spacing: 0 !important;
+      line-height: 20px !important;
+      color: rgba(0, 0, 0, 0.54) !important;
+      fill: rgba(0, 0, 0, 0.54) !important;
+      font-size: 14px;
+    }
+  }
+  .categories {
+    font-weight: 400 !important;
+    font-size: 15px;
+    letter-spacing: 0.03em !important;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.54) !important;
+    fill: rgba(0, 0, 0, 0.54) !important;
+  }
+  .block-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.loading {
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- common-css -->
+  {% if layout.common-css %}
+  <!-- // -->
+  {% for css in layout.common-css %}
+  <link rel="stylesheet" href="{{ css | relative_url }}" />
+  {% endfor %}
+  <!-- // -->
+  {% endif %}
+  <!-- font -->
+  {% if layout.common-googlefonts %}
+  <!-- // -->
+  {% for font in layout.common-googlefonts %}
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family={{ font }}" />
+  {% endfor %}
+  <!-- // -->
+  {% endif %}
+  <!-- css -->
+  {% if layout.css %}
+  <!-- // -->
+  {% for css in layout.css %}
+  <link rel="stylesheet/less" type="text/css" href="{{ css | relative_url }}" />
+  {% endfor %}
+  <!-- // -->
+  {% endif %}
+  <!-- js -->
+  {% if layout.common-js %}
+  <!-- // -->
+  {% for js in layout.common-js %}
+  <script src="{{ js | relative_url }}"></script>
+  {% endfor %}
+  <!-- // -->
+  {% endif %}
+  <!-- extend js -->
+  {% if layout.common-ext-js %}
+  <!-- for -->
+  {% for item in layout.common-ext-js %}
+  <script src="{{ item }}"></script>
+  {% endfor %}
+  <!-- // -->
+  {% endif %}
+</head>
